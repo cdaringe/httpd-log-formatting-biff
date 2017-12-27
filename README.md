@@ -8,6 +8,8 @@ see: https://stackoverflow.com/posts/47997641
 
 the only change to the httpd conf file is the addition of the custom log formats.
 
+for example:
+
 ```conf
 ErrorLogFormat "{\
 \"level\": \"%l\",\
@@ -15,6 +17,8 @@ ErrorLogFormat "{\
 \"timestamp\":\"%{<some-strftime-format>}t\"\
 }"
 ```
+
+to run, simply use the command:
 
 ```sh
 docker run \
